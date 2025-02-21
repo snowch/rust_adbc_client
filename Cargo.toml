@@ -1,0 +1,12 @@
+[package]
+name = "adbc-client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+adbc_core = { path = "../arrow-adbc/rust/core", features = ["driver_manager"] }
+arrow-array = { version = "54.1.0", default-features = false, features = ["ffi"] }
+arrow-schema = { version = "54.1.0", default-features = false }
+
+# Use the dummy driver for testing
+adbc_dummy = { path = "../arrow-adbc/rust/driver/dummy" }
