@@ -13,7 +13,7 @@ cargo build
 Clone and build this repo:
 
 ```bash
-git https://github.com/snowch/rust_adbc_client
+git clone https://github.com/snowch/rust_adbc_client
 cd rust_adbc_client
 cargo build
 ```
