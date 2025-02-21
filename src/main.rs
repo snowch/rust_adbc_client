@@ -4,7 +4,7 @@ use adbc_dummy::DummyDriver;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Create the driver
-    let mut driver = DummyDriver::default();  // Changed from new() to default()
+    let mut driver = DummyDriver::default();
     
     // Create database connection
     let mut db = driver.new_database()?;
