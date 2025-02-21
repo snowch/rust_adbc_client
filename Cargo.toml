@@ -10,3 +10,6 @@ arrow-schema = { version = "54.1.0", default-features = false }
 
 # Use the dummy driver for testing
 adbc_dummy = { path = "../arrow-adbc/rust/driver/dummy" }
+
+# uncomment to enable the vastdb driver
+#vastdb-adbc-driver = { path = "../vastdb-native-client/" }
